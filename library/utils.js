@@ -13,7 +13,7 @@
     let anyNacimiento = fechaInit.getFullYear();
     let anyActual = fechaFin.getFullYear();
     // verifico cuantos años bisiesto pasaron en el tramo de esos años
-    let numBisiestos = 0//numAnyBisiesto(anyNacimiento,anyActual);
+    let numBisiestos = numAnyBisiesto(anyNacimiento,anyActual);
     // calculo los milisegundos que han pasado desde la fecha de nacimiento
     let milisegundosInit = fechaInit.getTime();
     let milisegundosDesdeInit =  fechaFin.getTime() - milisegundosInit;
