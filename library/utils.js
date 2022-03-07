@@ -17,9 +17,10 @@
     // calculo los milisegundos que han pasado desde la fecha de nacimiento
     let milisegundosInit = fechaInit.getTime();
     let milisegundosDesdeInit =  fechaFin.getTime() - milisegundosInit;
-    milisegundosDesdeInit -=  numBisiestos * 24 * 60 * 60 * 1000;
+    milisegundosDesdeInit -=  (numBisiestos  * 24 * 60 * 60 * 1000);
     // voy calculando a partir de los milisegundos cuanto tiempo a pasado
-    any = milisegundosDesdeInit / 1000 / 60 / 60 / 24 / 30 / 12  ;
+    any = milisegundosDesdeInit / 1000 / 60 / 60 / 24 / 365  ;
+    console.log(any);
     mes = any - Math.floor(any);
     mes *= 12;
     dia = mes - Math.floor(mes);
